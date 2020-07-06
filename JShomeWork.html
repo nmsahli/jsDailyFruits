@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<title>JS home work</title>
+<meta charset="UTF-8">
+<style>
+#menu{
+	display:block;
+    text-align: center;
+	font-size:64px
+    }
+#Copyleft{
+	position:absolute;
+    left:0;
+    bottom:0
+    }
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+#bgimg {
+  background-image: url('https://image.freepik.com/foto-gratis/mesa-madera-borrosa-fruta-bokeh-fondo-mercado-cena_7191-782.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+button {
+display: inline-block;
+background-color: #942c0d;
+border-radius: 10px;
+border: 4px double #cccccc;
+color: #eeeeee;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+}
+ button:hover {background-color: #a8c983; }
+      
+ table{
+  border: 3px solid black;
+  padding: 5px;
+  text-align: center;
+  width:40%;
+  background-color:hsla(250,100%,95%,0.3);
+}
+</style>
+<script>
+function AddToMenu() {
+
+var x= prompt("please choose a letter from 1 to 5 :",0); //i=parseFloat(i);
+	switch (x) 
+	{ 
+	case '1': 
+    	x = document.createElement("IMG");
+    	x.setAttribute("src", "https://www.fay3.com/render/1584205029/b1XX4t1LY6.png?w=256");
+		break; 
+	case '2': 
+		x = document.createElement("IMG");
+    	x.setAttribute("src", "https://cdn.jsdelivr.net/emojione/assets/4.0/png/128/1f34a.png");
+		break; 
+	case '3': 
+    	x = document.createElement("IMG");
+    	x.setAttribute("src", "https://lh3.googleusercontent.com/proxy/lZfFHhDvQmfmwdVeLfx4BFuzmQrydfPqRRtC_iWZw4m1SokaUmG0YXDqpoqjl6qu6U_aIV19zzVvaGCLjXC4or2aoV7LftXrGaDBNt-k_2a4IXnwlCHl7bY");
+		break; 
+	case '4':
+        x = document.createElement("IMG");
+    	x.setAttribute("src", "https://lh3.googleusercontent.com/proxy/ySbMbp6z-mp9qqe_trJgSYtORSFgZ3gQCBbIRplXMdiF-nnoqQ5EGLV6ljxRVVbRY1oqf08_-AMqgGQwsUgAEI3Tnp2zTpjMdyo26pWb7OnrUVq05eZgn7-RFOZyjNJE1pXy2GI_HCSPlew3");
+		break; 
+    case '5': 
+		x = document.createElement("IMG");
+    	x.setAttribute("src", "https://ar.seaicons.com/wp-content/uploads/2015/06/raspberry-icon.png");
+		break; 	
+	default: 
+    		x = document.createElement("IMG");
+			x.setAttribute("src", "https://www.tut4dev.ir/Content/img/NotFound_256px.png"); 
+	}   
+      document.body.appendChild(x);
+}
+</script>
+<body id="bgimg">
+<div id="menu">
+    <p>Daily Fruits</p>
+    <p><button onclick="AddToMenu()">ADD TO MENU</button></p>
+  </div>
+<center>
+<table>
+  <tr>
+    <th>Fruits</th>
+    <th>Item Number</th> 
+  </tr>
+  <tr><td>Apple</td><td>1</td></tr>
+  <tr><td>Orange</td><td>2</td></tr>
+  <tr><td>Banana</td><td>3</td></tr>
+  <tr><td>watermelon</td><td>4</td></tr>
+  <tr><td>blueberry</td><td>5</td></tr>
+</table>
+</center>
+
+</body>
+<footer id="Copyleft">&copy; Copyright 2020 by Nouf alsahli</footer>
+</html>
+
